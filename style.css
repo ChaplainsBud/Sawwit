@@ -1,0 +1,112 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: khaki;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: repeat(19, 50px);
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main box2"
+    "main box2"
+    "main box2"
+    "main box3"
+    "main box3"
+    "main box3"
+    "toolbar box4"
+    "toolbar box4"
+    "toolbar box4"
+    "box5 box6"
+    "box5 box6"
+    "box5 box6"
+    "box7 box8"
+    "box7 box8"
+    "box7 box8"
+    "box9 ."
+    "box9 ."
+    "box9 ."
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+header {
+    background-color: purple;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+header > nav > ul, header > aside > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: pink;
+    grid-area: main;
+}
+
+.toolbar {
+    background-color: green;
+    grid-area: toolbar;
+}
+
+.box2 {
+    background-color: orange;
+    grid-area: box2;
+}
+
+.box3 {
+    background-color: aqua;
+    grid-area: box3;
+}
+
+.box4 {
+    background-color: brown;
+    grid-area: box4;
+}
+
+.box5 {
+    background-color: bisque;
+    grid-area: box5;
+}
+
+.box6 {
+    background-color: cadetblue;
+    grid-area: box6;
+}
+
+.box7 {
+    background-color: darkgoldenrod;
+    grid-area: box7;
+}
+
+.box8 {
+    background-color: firebrick;
+    grid-area: box8;
+}
+
+.box9 {
+    background-color: gainsboro;
+    grid-area: box9;
+}
+
+.box10 {
+    background-color: honeydew;
+    grid-area: box10;
+}
